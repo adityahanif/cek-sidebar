@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cek Surat SIDEBAR</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="card">
+    <header class="header">
+      <img src="icons/icon48.png" alt="SIDEBAR" width="32" height="32" />
+      <div>
+        <h1>Cek Surat SIDEBAR</h1>
+        <p>Sistem Informasi Dokumen Elektronik Jawa Barat</p>
+      </div>
+    </header>
+
+    <label class="label" for="kode">Kode Surat</label>
+    <input
+      id="kode"
+      type="text"
+      inputmode="latin"
+      autocomplete="off"
+      spellcheck="false"
+      maxlength="64"
+      placeholder="cth: A1B2C3D4E5"
+    />
+    <p id="error" class="error" hidden></p>
+    <p id="preview" class="preview" hidden></p>
+
+    <button id="cek" type="button">Cek Surat</button>
+
+    <section id="riwayat-wrap" hidden>
+      <span class="label">Terakhir dicek</span>
+      <ul id="riwayat"></ul>
+      <button id="hapus" type="button" class="link">hapus riwayat</button>
+    </section>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
